@@ -551,6 +551,43 @@ details.year-results .results-body { padding: 0 1.3rem 1.4rem; }
   top: 0.38rem;
 }
 
+/* ---------- Geographic US/Canada map ---------- */
+.geo-map-wrap {
+  max-width: 960px;
+  margin: 0 auto 1.25rem;
+  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--cream-dark);
+  box-shadow: 0 14px 34px -20px rgba(22, 19, 15, 0.4);
+  padding: 1rem;
+}
+
+#usca-map { width: 100%; height: auto; display: block; }
+
+#usca-map path {
+  fill: var(--cream-dark);
+  stroke: #b7ab8f;
+  stroke-width: 1;
+  transition: fill 0.15s;
+}
+
+#usca-map .map-open, #usca-map .map-open path,
+#usca-map .map-active, #usca-map .map-active path { cursor: pointer; }
+
+#usca-map path.map-active, #usca-map .map-active path {
+  fill: var(--black);
+  stroke: var(--gold);
+  stroke-width: 2;
+}
+
+#usca-map path.map-active:hover, #usca-map .map-active:hover path {
+  fill: var(--gold-deep);
+}
+
+#usca-map path.map-open:hover, #usca-map .map-open:hover path {
+  fill: var(--gold-light);
+}
+
 /* ---------- State map (tile grid) ---------- */
 .state-map {
   display: grid;

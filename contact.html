@@ -9,7 +9,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+  <style>
+    #usca-map { width: 100%; height: auto; display: block; }
+    #usca-map path { fill: #f1e9d8; stroke: #b7ab8f; stroke-width: 1; transition: fill 0.15s; }
+    #usca-map .map-open, #usca-map .map-open path,
+    #usca-map .map-active, #usca-map .map-active path { cursor: pointer; }
+    #usca-map path.map-active, #usca-map .map-active path { fill: #16130f; stroke: #c9a961; stroke-width: 2; }
+    #usca-map path.map-active:hover, #usca-map .map-active:hover path { fill: #a8863d; }
+    #usca-map path.map-open:hover, #usca-map .map-open:hover path { fill: #d9bd7c; }
+    .geo-map-wrap { max-width: 960px; margin: 0 auto 1.25rem; background: #ffffff; border-radius: 12px;
+      border: 1px solid #f0e9d6; box-shadow: 0 14px 34px -20px rgba(22,19,15,0.4); padding: 1rem; }
+  </style>
 </head>
 <body>
 

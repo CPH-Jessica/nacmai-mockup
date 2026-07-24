@@ -365,7 +365,7 @@ a:hover { color: var(--black); }
 }
 
 .hof-tile .hof-tile-photo {
-  height: 108px;
+  height: 140px;
   background: radial-gradient(circle at 50% 35%, rgba(201, 169, 97, 0.25), rgba(22, 19, 15, 0.2));
   display: flex;
   align-items: center;
@@ -376,6 +376,7 @@ a:hover { color: var(--black); }
 .hof-tile .hof-tile-photo img {
   width: 100%; height: 100%;
   object-fit: cover;
+  object-position: center top;
   position: absolute; inset: 0;
 }
 

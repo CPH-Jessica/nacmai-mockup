@@ -61,6 +61,32 @@
       color: var(--gold-bright);
     }
     .state-section { margin-bottom: 2rem; }
+    .video-embed { margin: 0; }
+    .video-frame { position: relative; aspect-ratio: 16 / 9; }
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 10px;
+    }
+    .video-embed figcaption { text-align: center; padding: 0.5rem 0.65rem 0.65rem; }
+    .video-embed .vtitle {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.02rem;
+      line-height: 1.25;
+      display: block;
+    }
+    .video-embed .vsub {
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-bright);
+      display: block;
+      margin-top: 0.2rem;
+    }
   </style>
 </head>
 <body>
@@ -112,8 +138,18 @@
       <h2 class="section-title">Featured</h2>
       <hr class="section-rule" />
       <div class="video-shelf">
-        <a class="video-slot" href="https://docs.google.com/videos/d/11vNTFpTbXoHmrRm9FL6zUOltheKQF28Ymt3zn6OIz3Y/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">The 2026 Awards Show</span><span class="vsub">Watch Now</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/1CCzS_zy0ylS1a3SWKgkl6bjlpP9vhTAOmpRhvyyAJEg/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Hall of Fame Show Promo</span><span class="vsub">Watch Now</span></a>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/UedlUtinsS4" title="2026 Awards Show Teaser" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">2026 Awards Show Teaser</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/OGY7BEcB43Y" title="Hall of Fame Show Promo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Hall of Fame Show Promo</span></figcaption>
+        </figure>
         <a class="video-slot" href="https://drive.google.com/file/d/1LeQ3Cjplaq7UrtggtcL2GE1adNUWExu1/view" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">From Legends to Today: NACMAI's Heart</span><span class="vsub">Watch Now</span></a>
       </div>
     </section>
@@ -122,20 +158,90 @@
       <h2 class="section-title">State &amp; Province Videos</h2>
       <hr class="section-rule" />
       <div class="video-shelf">
-        <a class="video-slot" href="https://docs.google.com/videos/d/1YB1h9x_i60tFrGVeDgS3AC8Sd0D1C98Xom-lhNgCxF8/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Alabama</span><span class="vsub">State Video</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/1D5PEC0xS_tuJolK73mIPWcY-12R-Pxr6vMwy7rmLa5o/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Alberta, Canada</span><span class="vsub">Province Video</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/1TkGH7Mbv7tNImtxgZyMuAVrIoa2II1rpP_rGcXh_60I/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">California</span><span class="vsub">State Video</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/1drOzuXA4_0rkOc4vBMZp51wvj1V_ANILHxbolptaIJ0/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Canada</span><span class="vsub">Province Video</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/1HTIoLs0s154727DgJPRg_MulKx6QGVNB3g2wCconpjE/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Illinois</span><span class="vsub">State Video</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/1sPQkkfBnU_osYAx1Ixg6DkMPl9FTKi0LRSwwNnbuLBg/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Indiana</span><span class="vsub">State Video</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/1C-mq2YcImBW1VHVVLYsSbTHAhIRxY8DI7o1BxVb30OI/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Kentucky</span><span class="vsub">State Video</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/1cbxXO-m58tVNMuIsB1SlC-Buw8xHJAaI8JJVmQbELqw/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Maine</span><span class="vsub">State Video</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/1VfVSTfxU81BlMsZU_1Gz51Qx-PtQvBmHzLHFnnzZVYk/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Missouri</span><span class="vsub">State Video</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/19R0SIwqZoEnIgRm8pSFVD6rCgbzsa_JJUvpBP2r3a1w/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">North Carolina</span><span class="vsub">State Video</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/17JalqOgepoguiayKzFhRiIVhUK0RnCRPjJsVbWIJelY/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Ohio</span><span class="vsub">State Video</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/1_LbYW5W9dXEyEazlkzR4KEChOxd6xUeDMEj3Q1ZMikM/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Oklahoma</span><span class="vsub">State Video</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/1Ck3bPwG26J17UnIVaS-PFJDCuW6yX2h2LANDauPe7uM/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">South Carolina</span><span class="vsub">State Video</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/16mW8-MwBK3VjevTkn2-MpEEQ9PXGCwmQpaiuvuipdXQ/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Tennessee</span><span class="vsub">State Video</span></a>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/MoHPlP1j2OU" title="Alabama" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Alabama</span><span class="vsub">State Video</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/KW0FYIUBEBw" title="Alberta Canada" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Alberta, Canada</span><span class="vsub">Province Video</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/9jGehTnZaQ8" title="California" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">California</span><span class="vsub">State Video</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/BaqIIYCiKQE" title="Canada" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Canada</span><span class="vsub">Province Video</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/eyPLLiAQPq8" title="Illinois" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Illinois</span><span class="vsub">State Video</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/xD9JQ5zz0OM" title="Indiana" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Indiana</span><span class="vsub">State Video</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/ggsYcH7PyaA" title="Kentucky" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Kentucky</span><span class="vsub">State Video</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/HHVxKIrCfxc" title="Maine" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Maine</span><span class="vsub">State Video</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/uTpJc_Yr644" title="Missouri" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Missouri</span><span class="vsub">State Video</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/18V7y4HQ-yU" title="North Carolina" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">North Carolina</span><span class="vsub">State Video</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/BbDRLHlzj9c" title="Ohio" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Ohio</span><span class="vsub">State Video</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/67b0L28kqmg" title="Oklahoma" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Oklahoma</span><span class="vsub">State Video</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/AijAW6Vd0FA" title="South Carolina" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">South Carolina</span><span class="vsub">State Video</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/L9oC_0-VNOQ" title="Tennessee" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Tennessee</span><span class="vsub">State Video</span></figcaption>
+        </figure>
       </div>
     </section>
 
@@ -145,8 +251,18 @@
       <div class="video-shelf">
         <a class="video-slot" href="https://docs.google.com/videos/d/1NoX2R6cw--meTiPRiELBEI9nvRnce0VNJmfGtfkNNsc/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Intro to NACMAI with Sophie Frank</span><span class="vsub">Seminar</span></a>
         <a class="video-slot" href="https://docs.google.com/videos/d/1sKuSiajZqKESPLWweSUKt4aYGFi62BI6LbmHC4JZHko/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Industry for Dummies</span><span class="vsub">Seminar</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/14NHiFfs1Z-8iZOkagxSezsFDaLmpp_b0TrZ-vWy2IX8/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Echoes in the Machine</span><span class="vsub">Seminar</span></a>
-        <a class="video-slot" href="https://docs.google.com/videos/d/1o4XH4KcZKIpaJhjHpI3-SDqbN8UoJT4p19gqYX9rr4o/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">Beyond the Beat</span><span class="vsub">Seminar</span></a>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/TcywK1VthVI" title="Seminar: Echoes in the Machine" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Seminar: Echoes in the Machine</span></figcaption>
+        </figure>
+        <figure class="video-embed">
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/sqhpBC-iWmM" title="Seminar Promo: Beyond the Beat" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <figcaption><span class="vtitle">Seminar Promo: Beyond the Beat</span></figcaption>
+        </figure>
         <a class="video-slot" href="https://docs.google.com/videos/d/1fuGpmSwowUAgSeI1YItWxgqn8r8u2TTmFLk0U1lpO7Y/edit" target="_blank" rel="noopener"><span class="vplay-icon">▶</span><span class="vtitle">People Hear With Their Eyes</span><span class="vsub">Seminar</span></a>
       </div>
     </section>

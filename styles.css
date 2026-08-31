@@ -681,6 +681,9 @@ details.year-results .results-body { padding: 0 1.3rem 1.4rem; }
   margin-right: 0.4rem;
 }
 
+.chapter-card {
+  scroll-margin-top: 7.5rem;
+}
 .chapter-card h3 { font-size: 1.05rem; }
 .chapter-card .chapter-state {
   font-size: 0.75rem;
